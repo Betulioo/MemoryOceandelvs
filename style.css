@@ -122,7 +122,7 @@ main {
   transform: rotateY(-180deg);
 }
 
-.navbar {
+.status {
   background-color: rgba(227, 237, 248, 0.754);
   color: #E1522D;
   display: flex;
@@ -132,11 +132,11 @@ main {
   flex-direction: column;
 }
 
-.nav-section {
+.status-section {
   text-align: center;
 }
 
-.nav-section h3 {
+.status-section h3 {
   margin: 0;
 }
 
@@ -147,7 +147,7 @@ main {
 
 /* Media query for responsive design if needed */
 @media (max-width: 600px) {
-  .navbar {
+  .status {
     flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

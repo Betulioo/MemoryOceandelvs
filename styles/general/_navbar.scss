@@ -1,4 +1,4 @@
-.navbar {
+.status {
     background-color: rgba(227, 237, 248, 0.754);
     color: #E1522D;
     display: flex;
@@ -8,11 +8,11 @@
     flex-direction: column;
   }
   
-  .nav-section {
+  .status-section {
     text-align: center;
   }
   
-  .nav-section h3 {
+  .status-section h3 {
     margin: 0;
   }
   
@@ -24,7 +24,7 @@
   
   /* Media query for responsive design if needed */
   @media (max-width: 600px) {
-    .navbar {
+    .status {
       flex-direction: column;
     }
   }
