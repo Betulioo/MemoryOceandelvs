@@ -1,13 +1,10 @@
 
-// this function select the elements whit class="card" and for each one of them give it a click event that change de event current target or the target clicked a new class called "descubierta"
+// this function select the elements whit class="card" and for each one of them give it a click event that change the event current target or the target clicked a new class called "descubierta"
 const flipCard =(event,i)=>{
     const card = totalOceanCards[i];
-    const cardWon = cardsMatched.find(findedCard=> findedCard.name === card.name);
+    // const cardWon = cardsMatched.find(findedCard=> findedCard.name === card.name);
 
-if(cardWon){
-    console.log(cardWon);
-    alert('this card is marked ;)')
-}else{
+
 
 
     cardsPicked.push(card)
@@ -25,4 +22,3 @@ if(cardWon){
         }
   
   }  
-}
