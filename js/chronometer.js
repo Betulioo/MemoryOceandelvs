@@ -1,10 +1,8 @@
+
 const chronometer = () =>{
-
-
-
     let chronoDiv$$ = document.querySelector('[data-function="chronometer"]');
 
-    setInterval(()=>{
+   intervalId = setInterval(()=>{
         segundos++   
         if(segundos < 10)    {     
         chronoDiv$$.textContent=`0${minutos}:0${segundos}`;
@@ -21,5 +19,4 @@ const chronometer = () =>{
     }    
 
         },1000);
- 
     }

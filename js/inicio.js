@@ -1,13 +1,14 @@
 //this function create the table with the cards
 
 const createTable = (cardArray) => {
+  let gridCardPicked$$ = document.querySelector('[data-function="cardsReady"]')
+  gridDiv$$.innerHTML= ""
+gridCardPicked$$.innerHTML = "";
     let divTable$$ = document.createElement("div");
     divTable$$.className = `tableDiv mesa`;
     gridDiv$$.appendChild(divTable$$);
-    
       for (let i = 0; i < cardArray.length; i++) {
-        const cardInfo = cardArray[i];
-    
+        const cardInfo = cardArray[i];    
         // console.log(i);
       
         let cardDiv$$ = document.createElement("div");
@@ -41,6 +42,6 @@ const createTable = (cardArray) => {
 
       };
       
-      onInit();
+      // onInit();
       
     

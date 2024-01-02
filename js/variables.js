@@ -1,3 +1,4 @@
+
 let oceanCards = [
   {
     id: 1,
@@ -106,12 +107,11 @@ let cardsMatched=[];
 //create a count for the attemps
 let count = 0;
 let score = 0;
-// this function sort sort the array and with the math.random  is sort randomdly
-totalOceanCards.sort(()=> 0.5 - Math.random())
 // this variables are for the chronometer and endGame
 let minutos = 0;
 let segundos = 0;
 
-
+//chronometer
+let intervalId;
 
 

@@ -2,14 +2,14 @@
     background-color: rgba(227, 237, 248, 0.754);
     color: #E1522D;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    flex-direction: column;
+    width: 100vw;
+    height: 7vh;
   }
   
   .status-section {
     text-align: center;
+    display: flex;
+    gap: 32px;
   }
   
   .status-section h3 {

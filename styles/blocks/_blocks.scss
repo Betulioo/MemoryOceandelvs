@@ -19,14 +19,14 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    max-width: 50rem;
+    // max-width: 50rem;
     margin: auto;
-    gap: 35px;
+    gap: 27px;
   }
   
   .card {
-    width: 6rem;
-    height: 7.4rem;
+    width: 7.2rem;
+    height: 10.4rem;
     margin: 0.5rem;
     border-radius: 0.3em;
     background-image: var(--gradient);

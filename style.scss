@@ -1,4 +1,9 @@
+$navbar-light-color: blue;
+$offcanvas-bg-color: #706ae1ee; 
+$offcanvas-horizontal-width: 230px;
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "./styles/general/root";
 @import "./styles/general/general";
 @import "./styles/blocks/blocks";
-@import "./styles/general/status";
+@import "./styles/general/navbar";
