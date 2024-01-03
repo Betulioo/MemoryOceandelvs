@@ -1,9 +1,11 @@
 .status {
     background-color: rgba(227, 237, 248, 0.754);
     color: #E1522D;
-    display: flex;
-    width: 100vw;
-    height: 7vh;
+    position: fixed;
+    right: 0%;
+    display: inline;
+    width: 20vw;
+    height: 100vh;
   }
   
   .status-section {

@@ -1,7 +1,6 @@
   main {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
     position: relative;
     background-color: #48ffc2;
     background-image: url('public/assets/memoryGame/background.png');
@@ -16,17 +15,15 @@
   
   .mesa {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    // max-width: 50rem;
-    margin: auto;
-    gap: 27px;
+    justify-content: center;
+    margin-top: 3%;
+    width: 96vw;
+    gap: 17px;
   }
   
   .card {
-    width: 7.2rem;
-    height: 10.4rem;
+    width: 5.2rem;
+    height: 6.4rem;
     margin: 0.5rem;
     border-radius: 0.3em;
     background-image: var(--gradient);
@@ -75,4 +72,11 @@
   
   .card.descubierta {
     transform: rotateY(-180deg);
+  }
+
+  .cardMain{
+    // margin: 5% 25% 0% 20%;
+    position: relative;
+    width: 10%;
+    height: 100%;
   }

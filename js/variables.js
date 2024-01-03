@@ -94,7 +94,7 @@ let oceanCards6=[
   }
 ]
 
-const gridDiv$$ = document.querySelector(".b-grid");
+const gridDiv$$ = document.querySelector('[data-function="grid"]');
 const main$$ = document.querySelector("main");
 // we concat the array to duplicate it
 // let totalOceanCards = oceanCards.concat(oceanCards);

@@ -12014,16 +12014,24 @@ main {
 .tableDiv {
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
+  height: 50%;
 }
 
 .cardsReady {
+  background-color: rgba(227, 237, 248, 0.754);
+  color: #E1522D;
+  position: absolute;
+  bottom: 0%;
   display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 28vh;
 }
 
 main {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
   position: relative;
   background-color: #48ffc2;
   background-image: url("public/assets/memoryGame/background.png");
@@ -12036,16 +12044,15 @@ main {
 
 .mesa {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  margin: auto;
-  gap: 27px;
+  justify-content: center;
+  margin-top: 3%;
+  width: 96vw;
+  gap: 17px;
 }
 
 .card {
-  width: 7.2rem;
-  height: 10.4rem;
+  width: 5.2rem;
+  height: 6.4rem;
   margin: 0.5rem;
   border-radius: 0.3em;
   background-image: var(--gradient);
@@ -12099,12 +12106,20 @@ main {
   transform: rotateY(-180deg);
 }
 
+.cardMain {
+  position: relative;
+  width: 10%;
+  height: 100%;
+}
+
 .status {
   background-color: rgba(227, 237, 248, 0.754);
   color: #E1522D;
-  display: flex;
-  width: 100vw;
-  height: 7vh;
+  position: fixed;
+  right: 0%;
+  display: inline;
+  width: 20vw;
+  height: 100vh;
 }
 
 .status-section {
