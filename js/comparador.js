@@ -26,10 +26,12 @@ setTimeout(()=>{
     cardsMatched.push(cardsPicked[0]);
     firstCardDiv$$[0].classList.remove("selected");
     firstCardDiv$$[1].classList.remove("selected");
-    firstCardDiv$$[0].hidden = true;
-    firstCardDiv$$[1].hidden = true;
+    firstCardDiv$$[0].classList.add("animati");
+    firstCardDiv$$[1].classList.add("animati");
+    // firstCardDiv$$[0].hidden = true;
+    // firstCardDiv$$[1].hidden = true;
     cardsPicked=[];
-    asideCards(cardsMatched);
+    setTimeout(asideCards(cardsMatched),5000);
     scorePlay();
 
 },900)

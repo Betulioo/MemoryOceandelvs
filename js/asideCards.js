@@ -18,9 +18,9 @@ let cardssDiv$$ = document.querySelector('[data-function="cardsReady"]')
   }
 console.log(singlesCard);
 
-if (singlesCard)
-;
-    cardMain$$.classList= "cardMain";
+if (singlesCard){
+  setTimeout(()=>{
+    cardMain$$.classList= "cardMain fadein";
 
     let cardDiv$$ = document.createElement("div");
     cardDiv$$.className = `cardDiv  card__contenido`;
@@ -36,7 +36,13 @@ if (singlesCard)
     cardDiv2$$.appendChild(cardDiv$$);
     cardDiv$$.appendChild(cardImg$$);
     cardMain$$.appendChild(cardDiv2$$);
+    setTimeout(()=>{
+      cardMain$$.classList.remove("fadein")
+    },1500)
 
     //  cardDiv2$$.addEventListener("click",(event)=> flipCard(event,i))
+    },1200)
+    
+}
 
 };

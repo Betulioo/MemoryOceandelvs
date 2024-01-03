@@ -1,0 +1,29 @@
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.animati{
+    animation: myAnim 2s ease 0s 1 normal forwards 
+}
+
+.fadein{
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+}
