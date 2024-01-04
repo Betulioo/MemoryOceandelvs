@@ -117,16 +117,13 @@ let chronoDiv$$ = document.querySelector('[data-function="chronometer"]');
 
 // navbar
 const divCount2$$ =  document.querySelector('[data-function="score"]');
-//asideCard
-const cardssDiv$$ = document.querySelector('[data-function="cardsReady"]')
+
 //compare card
 
 //contador
 const divCount$$ =  document.querySelector('[data-function="attempts"]');
 const score$$ = document.querySelector('[data-function="score"]');
 
-//inicio
-const gridCardPicked$$ = document.querySelector('[data-function="cardsReady"]')
 
 //restart
 const restartButton$$ = document.querySelector('[data-function="restartButton"]');

@@ -13,8 +13,11 @@ const chronometer = () =>{
             segundos =0;
             chronoDiv$$.textContent=`0${minutos}:0${segundos}`;
     
-        } 
+        }
 
+    } else if(minutos>9){
+        minutos++
+        chronoDiv$$.textContent=`${minutos}:0${segundos}`;
     }    
 
         },1000);

@@ -6,7 +6,8 @@ pauseButton$$.style.display = "none";
 
 
 const restart = () =>{
-
+    const confetti$$ = document.getElementById('confetti');
+    const endDiv$$ = document.getElementById('endDiv');
 
     clearInterval(intervalId);
     segundos = 0;
@@ -15,6 +16,10 @@ const restart = () =>{
     score = 0;
     divCount$$.textContent=` ${count}`
     divCount2$$.textContent=` ${score}`
+    // cardssDiv$$.style.display = "block"
+        onInit();
+
+    
 }
 
 const pause = ()=>{
@@ -29,7 +34,6 @@ const newGame = ()=>{
 totalOceanCards.sort(()=> 0.5 - Math.random())
     restart()
     pauseButton$$.style.display = "block";
-    onInit();
 }
 newGameButton$$.onclick = newGame;
 

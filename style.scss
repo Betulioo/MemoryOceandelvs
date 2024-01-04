@@ -1,8 +1,10 @@
-$navbar-light-color: blue;
-$offcanvas-bg-color: #edecfffc; 
 $offcanvas-horizontal-width: 230px;
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+$enable-gradients: true;
+$gradient: linear-gradient(0deg, rgba(188,113,255,1) 0%, rgba(128,128,255,1) 100%);
+$border-radius: 5%;
 
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./styles/animations/bubble";
 @import "./styles/general/root";
 @import "./styles/general/general";
 @import "./styles/blocks/blocks";

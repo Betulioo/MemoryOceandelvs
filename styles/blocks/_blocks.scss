@@ -33,6 +33,7 @@
     cursor: pointer;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    z-index: 2;
   }
   
   .card__contenido {

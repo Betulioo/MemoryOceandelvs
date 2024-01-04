@@ -1,11 +1,22 @@
 //this function create the table with the cards
 
 const createTable = (cardArray) => {
-  gridDiv$$.innerHTML= ""
-gridCardPicked$$.innerHTML = "";
+ main$$.innerHTML=""
+    const divCards$$ = document.createElement("div");
+    divCards$$.setAttribute("data-function","cardsReady");
+    divCards$$.classList="cardsReady"
+
+    const divGrid$$ = document.createElement("div");
+    divGrid$$.setAttribute("data-function","grid");
+    divGrid$$.classList="mesa"
+
+    main$$.appendChild(divCards$$);
+    main$$.appendChild(divGrid$$);
+
     let divTable$$ = document.createElement("div");
     divTable$$.className = `tableDiv mesa`;
-    gridDiv$$.appendChild(divTable$$);
+    divGrid$$.appendChild(divTable$$);
+
       for (let i = 0; i < cardArray.length; i++) {
         const cardInfo = cardArray[i];    
         // console.log(i);
@@ -26,6 +37,7 @@ gridCardPicked$$.innerHTML = "";
         cardDiv2$$.addEventListener("click",(event)=> flipCard(event,i))
         
       }
+
     };
 //this is our initializator function
 
