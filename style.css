@@ -12146,6 +12146,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .tableDiv {
@@ -12185,6 +12186,10 @@ main {
   margin-top: 3%;
   width: 96vw;
   gap: 17px;
+}
+
+.mesi {
+  display: flex;
 }
 
 .card {

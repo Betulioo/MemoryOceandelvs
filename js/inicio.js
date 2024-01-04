@@ -8,7 +8,7 @@ const createTable = (cardArray) => {
 
     const divGrid$$ = document.createElement("div");
     divGrid$$.setAttribute("data-function","grid");
-    divGrid$$.classList="mesa"
+    divGrid$$.classList="mesi"
 
     main$$.appendChild(divCards$$);
     main$$.appendChild(divGrid$$);
