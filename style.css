@@ -6257,7 +6257,7 @@ textarea.form-control-lg {
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
   --bs-offcanvas-color: var(--bs-body-color);
-  --bs-offcanvas-bg: rgba(112, 106, 225, 0.9333333333);
+  --bs-offcanvas-bg: rgba(237, 236, 255, 0.9882352941);
   --bs-offcanvas-border-width: var(--bs-border-width);
   --bs-offcanvas-border-color: var(--bs-border-color-translucent);
   --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
@@ -12163,10 +12163,65 @@ main {
     transform: scale(1);
   }
 }
+@keyframes myAnim3 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+@keyframes myAnim4 {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .animati {
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .fadein {
   animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+
+.pulseHearth {
+  animation: myAnim3 2s ease 0s 1 normal forwards;
+}
+
+.fadeInFoward {
+  animation: myAnim4 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) 0s 1 normal none;
+}
+
+.endImg {
+  width: 50%;
+  height: 70%;
+  border-radius: 10%;
+}
+
+.endDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */

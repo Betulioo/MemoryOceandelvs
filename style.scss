@@ -1,5 +1,5 @@
 $navbar-light-color: blue;
-$offcanvas-bg-color: #706ae1ee; 
+$offcanvas-bg-color: #edecfffc; 
 $offcanvas-horizontal-width: 230px;
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -7,4 +7,5 @@ $offcanvas-horizontal-width: 230px;
 @import "./styles/general/general";
 @import "./styles/blocks/blocks";
 @import "./styles/general/navbar";
-@import "./styles/animations/animations"
+@import "./styles/animations/animations";
+@import "./styles/blocks/endGame";

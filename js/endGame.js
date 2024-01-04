@@ -1,10 +1,7 @@
 const endGame = ()=>{
 
-
-    main$$.innerHTML="";
-
     let endDiv$$ = document.createElement('div');
-    endDiv$$.classList="endDiv";
+    endDiv$$.classList="endDiv fadeInFoward";
 
     let endImg$$ = document.createElement('img');
     endImg$$.classList="endImg"
@@ -12,5 +9,12 @@ const endGame = ()=>{
 
     endDiv$$.appendChild(endImg$$);
     main$$.appendChild(endDiv$$);
+
 }
 
+const endFn = () =>{
+    if (score===oceanCards6.length){
+        chronometer();
+        endGame();
+    }
+}

@@ -1,7 +1,6 @@
 // this function compare the selected cards and compared it
-const compareCards = () => {
-const firstCardDiv$$ = document.querySelectorAll('.selected');
 const removeClass =()=>{
+    let firstCardDiv$$ = document.querySelectorAll('.selected');
 
     firstCardDiv$$[0].classList.remove("descubierta");
     firstCardDiv$$[1].classList.remove("descubierta");
@@ -9,6 +8,9 @@ const removeClass =()=>{
     firstCardDiv$$[1].classList.remove("selected");
 
 }
+const compareCards = () => {
+    let firstCardDiv$$ = document.querySelectorAll('.selected');
+
 
     const firstCard = cardsPicked[0];
     const secondCard = cardsPicked[1];
@@ -32,6 +34,7 @@ setTimeout(()=>{
     // firstCardDiv$$[1].hidden = true;
     cardsPicked=[];
     setTimeout(asideCards(cardsMatched),5000);
+    contador()
     scorePlay();
 
 },900)

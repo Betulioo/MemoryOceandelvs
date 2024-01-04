@@ -72,26 +72,26 @@ let oceanCards6=[
     name: "marine2",
     img: "public/assets/memoryGame/marine2.png",
   },
-  {
-    id: 3,
-    name: "marine3",
-    img: "public/assets/memoryGame/marine3.png",
-  },
-  {
-    id: 4,
-    name: "marine4",
-    img: "public/assets/memoryGame/marine4.png",
-  },
-  {
-    id: 5,
-    name: "marine5",
-    img: "public/assets/memoryGame/marine5.png",
-  },
-  {
-    id: 6,
-    name: "marine6",
-    img: "public/assets/memoryGame/marine6.png",
-  }
+  // {
+  //   id: 3,
+  //   name: "marine3",
+  //   img: "public/assets/memoryGame/marine3.png",
+  // },
+  // {
+  //   id: 4,
+  //   name: "marine4",
+  //   img: "public/assets/memoryGame/marine4.png",
+  // },
+  // {
+  //   id: 5,
+  //   name: "marine5",
+  //   img: "public/assets/memoryGame/marine5.png",
+  // },
+  // {
+  //   id: 6,
+  //   name: "marine6",
+  //   img: "public/assets/memoryGame/marine6.png",
+  // }
 ]
 
 const gridDiv$$ = document.querySelector('[data-function="grid"]');
@@ -113,5 +113,24 @@ let segundos = 0;
 
 //chronometer
 let intervalId;
+let chronoDiv$$ = document.querySelector('[data-function="chronometer"]');
 
+// navbar
+const divCount2$$ =  document.querySelector('[data-function="score"]');
+//asideCard
+const cardssDiv$$ = document.querySelector('[data-function="cardsReady"]')
+//compare card
 
+//contador
+const divCount$$ =  document.querySelector('[data-function="attempts"]');
+const score$$ = document.querySelector('[data-function="score"]');
+
+//inicio
+const gridCardPicked$$ = document.querySelector('[data-function="cardsReady"]')
+
+//restart
+const restartButton$$ = document.querySelector('[data-function="restartButton"]');
+const pauseButton$$ = document.querySelector('[data-function="pauseButton"]');
+const startButton$$ = document.querySelector('[data-function="startButton"]');
+const newGameButton$$ = document.querySelector('[data-function="newGameButton"]');
+const startLi$$ = document.querySelector('[data-function="startLi"]');

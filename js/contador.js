@@ -1,11 +1,15 @@
 const contador = () =>{
     count++
-  const divCount$$ =  document.querySelector('[data-function="attempts"]');
-  divCount$$.textContent=` ${count}`
+
+  score$$.classList.add("pulseHearth");
+  divCount$$.textContent=` ${count}`;
+  // setTimeout(()=>{
+  //   score$$.classList.remove("pulseHearth")
+  // },500)
 }
 
 const scorePlay = () =>{
     score++
-    const divCount$$ =  document.querySelector('[data-function="score"]');
-    divCount$$.textContent=` ${score}`
+    score$$.textContent=` ${score}`
+    endFn()
 }

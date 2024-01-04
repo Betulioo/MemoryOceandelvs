@@ -1,7 +1,6 @@
 //this function create the table with the cards
 
 const createTable = (cardArray) => {
-  let gridCardPicked$$ = document.querySelector('[data-function="cardsReady"]')
   gridDiv$$.innerHTML= ""
 gridCardPicked$$.innerHTML = "";
     let divTable$$ = document.createElement("div");
@@ -33,13 +32,7 @@ gridCardPicked$$.innerHTML = "";
     const onInit = () => {
         createTable(totalOceanCards);
         chronometer();
-        setInterval(()=>{
-          if (score===6){
-            endGame();
-            clearInterval();
-        }
-        })
-
+            
       };
       
       // onInit();
